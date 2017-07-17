@@ -1,0 +1,173 @@
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+}
+nav{
+	background-color: #ccc;
+	height: 50px;
+}	
+
+nav ul{
+	list-style:none;
+	margin: 0;
+	float: right;
+
+}
+nav ul li,nav .logo{
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 20px;
+}
+nav ul li a{
+	line-height: 50px;
+	text-decoration: none;
+	color:#fff;
+	display: inline-block;
+	height: inherit;
+}
+.logo{
+	float: left;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding-left: 10px;
+}
+.logo a{
+	color:#fff;
+}
+#banner{
+	background-color: #777;
+	height: 700px;
+}
+#banner .inner{
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 160px;
+}
+#banner .inner h1{
+	margin: 0;
+}
+button{
+	border:none;
+	background-color: #333;
+	color: #eee;
+	padding: 14px 40px;
+}
+#banner button{
+	padding: 14px 60px;
+}
+#banner .inner .more{
+	margin-top:250px;
+	color: #fff;
+}
+.sub-heading{
+	line-height: 30px;
+	margin: 30px 0;
+	font-size: 18px;
+}
+.green{
+	text-align: center;
+	background-color: #089DB0;
+	color: #fff;
+	padding: 100px 0;
+}
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+.hr{
+	width: 100%;
+	margin: 20px auto;
+	height: 2px;	
+}
+.green .hr{
+	background-color: #078494;
+	width: 60%;
+}
+.green .icon-group{
+	margin:20px;
+}
+.green .icon-group .icon{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: #000;
+	transform: rotate(45deg);
+	margin: 20px;
+}
+.gray{
+	background-color: #252f34;
+	color: #fff;
+}
+.gray .img-section{
+	max-width:45%;
+}
+.gray .img-section img{
+	width: 100%;
+	height: 500px;
+	
+}
+.gray .text-section{
+	max-width: 55%;
+	position: relative;
+	top: 68px;
+	left: 50px;
+}
+.gray .text-section >*{
+	max-width: 90%;
+}
+.gray .text-section h2 {
+	margin-bottom: 20px;
+}
+.gray .text-section p {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.text-section .sub-heading{
+	font-size:22px;
+	margin-top: 0;
+}
+.gray .article-preview{
+	font-size: 0;
+}
+.gray .article-preview >div{
+	float: left;
+}
+
+.article-preview:nth-child(odd){
+	background-color: rgba(255,255,255,0.05);
+}
+.purple{
+	background-color: #3f3965;
+	color: #fff;
+	padding: 80px;
+}
+.purple .header-wrapper{
+	text-align: center;
+}
+.purple .hr{
+	background-color: #373259;
+	width: 60%;
+}
+.card-group{
+
+}
+.card{
+	float:left;
+	width: 50%;
+	min-height: 300px;
+	padding: 20px;
+	-webkit-box-sizing:border-box ;
+	-moz-box-sizing:border-box ;
+	-ms-box-sizing:border-box ;
+	-o-box-sizing:border-box ;
+	box-sizing:border-box ;
+	border:1px solid white;
+}
+h3{
+	font-size:20px;
+}
