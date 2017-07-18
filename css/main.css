@@ -1,14 +1,39 @@
+
 .clearfix:after{
 	content: "";
 	display: block;
 	clear: both;
 }
+.main-wrapper{
+	overflow: hidden;
+	background: #444 url(../img/bg6.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+
+}
+section:not(:first-child){
+	margin:50px 0;
 }
 nav{
-	background-color: #ccc;
 	height: 50px;
+	background-color: transparent;
 }	
-
+h3{
+	font-size:20px;
+}
+p{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+ul{
+	margin: 0;
+}
+a{
+	text-decoration: none;	
+}
 nav ul{
 	list-style:none;
 	margin: 0;
@@ -27,6 +52,9 @@ nav ul li a{
 	display: inline-block;
 	height: inherit;
 }
+header{
+	background-color: rgba(0,0,0,0.3);
+}
 .logo{
 	float: left;
 	font-size: 20px;
@@ -38,7 +66,6 @@ nav ul li a{
 	color:#fff;
 }
 #banner{
-	background-color: #777;
 	height: 700px;
 }
 #banner .inner{
@@ -154,12 +181,14 @@ button{
 	width: 60%;
 }
 .card-group{
-
+	margin-left: 47px;
+    width: 90%;
 }
 .card{
 	float:left;
+	/*父元素内容宽度的45% 不包括padding/margin/bodrder*/
 	width: 50%;
-	min-height: 300px;
+	min-height: 250px;
 	padding: 20px;
 	-webkit-box-sizing:border-box ;
 	-moz-box-sizing:border-box ;
@@ -168,6 +197,75 @@ button{
 	box-sizing:border-box ;
 	border:1px solid white;
 }
-h3{
-	font-size:20px;
+.card:first-child{
+	background-color: rgba(0,0,0,0.04)
+}
+.card:nth-child(2){
+	background-color: rgba(0,0,0,0.08)
+}
+.card:nth-child(3){
+	background-color: rgba(0,0,0,0.12)
+}
+.card:nth-child(4){
+	background-color: rgba(0,0,0,0.16)
+}
+.card:nth-child(5){
+	background-color: rgba(0,0,0,0.2)
+}
+.card:last-child{
+   background-color: rgba(0,0,0,0.24)
+
+}
+footer{
+	background-color: #333;
+	color: #fff;
+	min-height: 200px;
+	text-align: center;
+}
+.share-group{
+	width: 1080px;
+	display: block;
+	margin: 0 auto;
+	padding: 50px;
+}
+.share-group li{
+	display: inline-block;
+	padding: 10px;
+}
+.copy{
+	padding:20px;
+}
+#sidebar{
+	width: 300px;
+	background-color: #333;
+	color: #fff;
+	position: fixed;
+	right: -300px;
+	bottom: 0;
+	top: 0;
+	padding: 20px 0;
+}
+#sidebar ul{
+	list-style:none;
+	padding-left: 0;
+}
+#sidebar ul a{
+	padding: 10px 30px;
+
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+}
+#sidebar ul a:hover{
+	background-color: #444;
+}
+.mask{
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.4);
 }
