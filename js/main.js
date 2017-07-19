@@ -1,9 +1,10 @@
 ;$(function(){
-	"use strict";
-	var sidebar=($"#sidebar");
-	mask=$(".mask");
-	sidebar_trigger=($"#sidebar_trigger");
-	sidebar_trigger.on("click",function(){
-		
+	
+	var sidebar=$("#sidebar");
+	
+	var siderbar_trigger=$("#sidebar_trigger");
+	
+	siderbar_trigger.on("click",function(){
+		console.log("lala")
 	})
 })
