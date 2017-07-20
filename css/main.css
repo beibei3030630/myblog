@@ -13,11 +13,19 @@ p{
 	letter-spacing: 1px;
 }
 ul{
+	list-style: none;
 	margin: 0;
 }
 a{
 	text-decoration: none;	
 }
+button{
+	border:none;
+	background-color: #333;
+	color: #eee;
+	padding: 14px 40px;
+}
+
 footer{
 	background-color: #333;
 	color: #fff;
@@ -73,12 +81,6 @@ nav ul  a{
 }
 nav ul  a:hover{
 	border-bottom: 3px solid #fff;
-}
-button{
-	border:none;
-	background-color: #333;
-	color: #eee;
-	padding: 14px 40px;
 }
 
 .logo{
@@ -329,12 +331,13 @@ button{
 	padding: 20px 0;
 }
 #sidebar ul{
-	list-style:none;
 	padding-left: 0;
+}
+#sidebar ul li {
+	margin-bottom: 10px;
 }
 #sidebar ul a{
 	padding: 10px 30px;
-
 	display: inline-block;
 	text-decoration: none;
 	color: #fff;
@@ -351,4 +354,11 @@ button{
 	left: 0;
 	bottom: 0;
 	background-color: rgba(0,0,0,0.4);
+}
+button.back-to-top{
+	 position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid #999;
+    background-color: rgba(0,0,0,0.4);
 }
