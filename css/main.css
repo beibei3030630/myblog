@@ -30,21 +30,23 @@ footer{
 	clear: both;
 }
 .main-wrapper{
-	min-width: 1420px;
+	min-width: 900px;
     overflow: hidden;
-    background: #444 url(../img/bg6.jpg);
+    background: #444 url(../img/bg-img.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
 }
-@media(max-width: 320px){
+/*@media screen and (max-width: 600px){
   .main-wrapper{
   	background:#444 url(../img/bg6.jpg);
-	background-size:320px 170px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
   }
-}
+}*/
 header{
 	background-color: rgba(250,250,250,0.05);
 }
@@ -152,6 +154,13 @@ button{
 	max-width: 1080px;
 	margin: 0 auto;
 }
+
+@media(max-width: 320px){
+	.wrapper{
+		margin: 0;
+	}
+}
+
 .hr{
 	width: 100%;
 	margin: 20px auto;
