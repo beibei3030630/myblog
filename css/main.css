@@ -1,3 +1,8 @@
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
 section:not(:first-child){
 	margin:50px 0;
 }
@@ -5,6 +10,11 @@ nav{
 	height: 50px;
 	background-color: transparent;
 }	
+h2{
+	font-size: 32px;
+    letter-spacing: 8px;
+   	text-align: center;
+}
 h3{
 	font-size:20px;
 }
@@ -25,6 +35,13 @@ button{
 	color: #eee;
 	padding: 14px 40px;
 }
+header{
+	background-color: rgba(250,250,250,0.05);
+}
+section{
+	margin: 0 auto;
+	padding: 80px;
+}
 
 footer{
 	background-color: #333;
@@ -32,11 +49,7 @@ footer{
 	min-height: 200px;
 	text-align: center;
 }
-.clearfix:after{
-	content: "";
-	display: block;
-	clear: both;
-}
+
 .main-wrapper{
 	min-width: 900px;
     overflow: hidden;
@@ -47,20 +60,20 @@ footer{
     background-position: center center;
 
 }
-/*@media screen and (max-width: 600px){
-  .main-wrapper{
-  	background:#444 url(../img/bg6.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-  }
-}*/
-header{
-	background-color: rgba(250,250,250,0.05);
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
 }
+
+.hr{
+	width: 100%;
+	margin: 20px auto;
+	height: 2px;	
+}
+
+
 nav ul{
 	list-style:none;
-	margin: 0;
 	float: right;
 
 }
@@ -136,128 +149,11 @@ nav ul  a:hover{
 	    font-size: 20px;
         letter-spacing: 10px;
 }
-.banner-btn{
 
-}
-#writing{
-	text-align: center;
-    background-color: #90bcce;
-    color: #fff;
-    padding: 35px 0;
-}
-#writing p{
-	width: 75%;
-    margin-bottom: 49px;
-    margin-left: 103px;
-    font-size: 17px;
-    color: #4A3F3F;
-}
-.wrapper{
-	max-width: 1080px;
-	margin: 0 auto;
-}
-
-@media(max-width: 320px){
-	.wrapper{
-		margin: 0;
-	}
-}
-
-.hr{
-	width: 100%;
-	margin: 20px auto;
-	height: 2px;	
-}
-#writing h2{
-	font-size: 37px;
-    letter-spacing: 9px;
-}
-#writing .hr{
-	background-color: #078494;
-    width: 100%;
-}
-#writing {
-	padding: 50px 80px;
-    padding-bottom: 100px;
-}
-/*#writing .icon-group .icon{
-	display: inline-block;
-	width: 60px;
-	height: 60px;
-	background-color: #000;
-	transform: rotate(45deg);
-	margin: 20px;
-}*/
-#writing .sectional-group{
-	width: 100%;
-    max-width: 1230px;
-    margin: 0 auto;
-}
-#writing .sub-heading{
-	line-height: 30px;
-    font-size: 21px;
-    font-weight: 700;
-    letter-spacing: 5px;
-    color: #3C4439;
-    text-align: left;
-    margin: 39px 0 40px 151px;
-}
-.sectional-group img{
-    width: 320px;
-    height: 572px;
-    padding-right: 23px;
-    margin-top: 26px;
-}
-.gray{
-	background-color: #252f34;
-	color: #fff;
-}
-.gray .img-section{
-	max-width:45%;
-}
-.gray .img-section img{
-	width: 100%;
-	height: 500px;
-	
-}
-.gray .text-section{
-	max-width: 55%;
-	position: relative;
-	top: 68px;
-	left: 50px;
-}
-.gray .text-section >*{
-	max-width: 90%;
-}
-.gray .text-section h2 {
-	margin-bottom: 20px;
-}
-.gray .text-section p {
-	font-size: 18px;
-	letter-spacing: 1px;
-}
-.text-section .sub-heading{
-	font-size:22px;
-	margin-top: 0;
-}
-.gray .article-preview{
-	font-size: 0;
-}
-.gray .article-preview >div{
-	float: left;
-}
-
-.article-preview:nth-child(odd){
-	background-color: rgba(255,255,255,0.05);
-}
 #learn{
-	    background-color: #7caf91;
+	background-color: #7caf91;
     color: #fff;
     padding: 80px;
-}
-#learn h2{
-	font-size: 32px;
-    letter-spacing: 8px;
 }
 #learn .header-wrapper{
 	text-align: center;
@@ -306,19 +202,61 @@ nav ul  a:hover{
    background-color: rgba(0,0,0,0.27)
 
 }
+#writing{
+	text-align: center;
+    background-color: #90bcce;
+    color: #fff;
+    padding: 35px 0;
+}
+#writing p{
+	width: 75%;
+    margin-bottom: 49px;
+    margin-left: 103px;
+    font-size: 17px;
+    color: #4A3F3F;
+}
 
-.share-group{
-	width: 1080px;
-	display: block;
-	margin: 0 auto;
-	padding: 50px;
+#writing .hr{
+	background-color: #078494;
 }
-.share-group li{
-	display: inline-block;
-	padding: 10px;
+#writing {
+	padding: 50px 80px;
+    padding-bottom: 100px;
 }
+#writing .sectional-group{
+	width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+#writing .sub-heading{
+	line-height: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #3C4439;
+    text-align: left;
+    margin: 39px 0 40px 151px;
+}
+.sectional-group img{
+    width: 320px;
+    height: 572px;
+    padding-right: 23px;
+    margin-top: 26px;
+}
+.text-section .sub-heading{
+	font-size:22px;
+	margin-top: 0;
+}
+
+
+.article-preview:nth-child(odd){
+	background-color: rgba(255,255,255,0.05);
+}
+
+
+
 .copy{
-	padding:20px;
+	padding-top: 100px;
 }
 #sidebar{
 	width: 300px;
