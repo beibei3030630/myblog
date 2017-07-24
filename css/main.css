@@ -254,7 +254,7 @@ nav ul  a:hover{
     background-color: #f39e9e;
 }
 #aboutMe .hr{
-    background-color: rgba(224, 115, 115, 0.75);
+  background-color: rgba(224, 115, 115, 0.75);
     margin: 60px auto;
 }
 #aboutMe .article-preview{
@@ -303,18 +303,63 @@ nav ul  a:hover{
 .article-preview:nth-child(even){
 	background-color: rgba(255,255,255,0.2);
 }
-.share-group{
-	display: block;
-    margin: 0 auto;
-    padding: 50px;
-    min-width: 900px;
+#footer{
+	padding: 50px 100px;
 }
-.share-group li{
-	display: inline-block;
-	padding: 10px;
+.weixin{ 
+	width:30px;
+	height:30px;
+	position:relative;
+    font-size:12px; 
+	text-align:center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	}
+.weixin a{
+	width:30px;
+	height:30px;
+	display:block;
+	position:absolute; 
+	left:0; 
+	top:0;
+	background:url(../img/icon/weixin.png) no-repeat ; 
+	
+	}
+.weixin .weixin_nr{
+	width: 170px;
+    height: 170px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    left: -90px;
+    top: 45px;
+    display: none;
+}
+.weixin .weixin_nr .arrow{ 
+	width: 0;
+    height: 0;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: 90px;
+    top: -10px;
+}
+.weixin .weixin_nr img{
+ margin-bottom:5px;
+}
+
+.weixin.on .weixin_nr{ 
+	display:block;
+}
+.weixin.on a{ 
+	background:url(../img/icon/weixin.png) no-repeat left bottom;
+	
 }
 .copy{
-	padding:20px;
+	padding-top:50px;
+
 }
 #sidebar{
 	width: 300px;
