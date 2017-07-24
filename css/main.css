@@ -1,8 +1,3 @@
-.clearfix:after{
-	content: "";
-	display: block;
-	clear: both;
-}
 section:not(:first-child){
 	margin:50px 0;
 }
@@ -35,9 +30,6 @@ button{
 	color: #eee;
 	padding: 14px 40px;
 }
-header{
-	background-color: rgba(250,250,250,0.05);
-}
 section{
 	margin: 0 auto;
 	padding: 80px;
@@ -49,7 +41,11 @@ footer{
 	min-height: 200px;
 	text-align: center;
 }
-
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
 .main-wrapper{
 	min-width: 900px;
     overflow: hidden;
@@ -60,18 +56,10 @@ footer{
     background-position: center center;
 
 }
-.wrapper{
-	max-width: 1080px;
-	margin: 0 auto;
+
+header{
+	background-color: rgba(250,250,250,0.05);
 }
-
-.hr{
-	width: 100%;
-	margin: 20px auto;
-	height: 2px;	
-}
-
-
 nav ul{
 	list-style:none;
 	float: right;
@@ -149,7 +137,9 @@ nav ul  a:hover{
 	    font-size: 20px;
         letter-spacing: 10px;
 }
+.banner-btn{
 
+}
 #learn{
 	background-color: #7caf91;
     color: #fff;
@@ -215,6 +205,22 @@ nav ul  a:hover{
     font-size: 17px;
     color: #4A3F3F;
 }
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+@media(max-width: 320px){
+	.wrapper{
+		margin: 0;
+	}
+}
+
+.hr{
+	width: 100%;
+	margin: 20px auto;
+	height: 2px;	
+}
 
 #writing .hr{
 	background-color: #078494;
@@ -243,20 +249,72 @@ nav ul  a:hover{
     padding-right: 23px;
     margin-top: 26px;
 }
+#aboutMe{
+	color: #fff;
+    background-color: #f39e9e;
+}
+#aboutMe .hr{
+    background-color: rgba(224, 115, 115, 0.75);
+    margin: 60px auto;
+}
+#aboutMe .article-preview{
+	font-size: 0;
+	max-width: 1050px;
+	margin: 0 auto;
+}
+#aboutMe .article-preview >div{
+	float: left;
+}
+#aboutMe .img-section{
+	width:45%;
+}
+
+#aboutMe .img-section img{
+	width: 100%;
+	height: 300px;
+	
+}
+#aboutMe .text-section{
+   width: 55%;
+    position: relative;
+    top: 31px;
+    left: 30px;
+    line-height: 23px;
+}
+#aboutMe .text-section >*{
+	max-width: 93%;
+}
+#aboutMe .text-section h2 {
+	margin-bottom: 20px;
+}
+#aboutMe .text-section p {
+	font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
 .text-section .sub-heading{
 	font-size:22px;
 	margin-top: 0;
 }
 
-
 .article-preview:nth-child(odd){
-	background-color: rgba(255,255,255,0.05);
+	background-color: rgba(255,255,255,0.1);
 }
-
-
-
+.article-preview:nth-child(even){
+	background-color: rgba(255,255,255,0.2);
+}
+.share-group{
+	display: block;
+    margin: 0 auto;
+    padding: 50px;
+    min-width: 900px;
+}
+.share-group li{
+	display: inline-block;
+	padding: 10px;
+}
 .copy{
-	padding-top: 100px;
+	padding:20px;
 }
 #sidebar{
 	width: 300px;
