@@ -1,4 +1,6 @@
 $(function(){
+  //刷新回到顶部
+ $('body').animate( {scrollTop: 0}, 500);
 	var sidebar=$("#sidebar");
 	var mask=$(".mask");
 	var sidebar_trigger=$("#siderbar_trigger");
@@ -26,4 +28,18 @@ $(function(){
   		backButton.fadeOut();
   });
   $(window).trigger("scroll");
+  // 添加触发锚点跳转的插件
+  $(".learn_btn").zxxAnchor({
+    anchortag:"href"
+  });
+  $(".writing_btn").zxxAnchor({
+    anchortag:"href"
+  });
+  $(".contact_btn").zxxAnchor({
+    anchortag:"href"
+  });
+  $(".banner-btn").zxxAnchor({
+    anchortag:"href"
+  }); 
+
 });

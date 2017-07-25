@@ -138,7 +138,8 @@ nav ul  a:hover{
         letter-spacing: 10px;
 }
 .banner-btn{
-
+	cursor: pointer;
+	outline: none;
 }
 #learn{
 	background-color: #7caf91;
@@ -370,6 +371,7 @@ nav ul  a:hover{
 	bottom: 0;
 	top: 0;
 	padding: 20px 0;
+	z-index: 100;
 }
 #sidebar ul{
 	padding-left: 0;
